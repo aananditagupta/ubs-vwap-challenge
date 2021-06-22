@@ -1,27 +1,3 @@
-/*
-
-TASK: Design and write an implementation of the Calculator interface below so 
-on the applyMarketUpdate method being called 
-the TwoWayPrice returned is the VWAP (volume weighted average price) two-way price 
-for the instrument of the MarketUpdate. 
-Each instrument can receive a two way price update from one of 50 markets, 
-and in calculating the VWAP for the instrument the calculator should consider the most recent price update for each market (received so far)
-
-VWAP Calculation: 
-
-//5 shares at a 100 
-//3 shares at a 200 
-//2 shares at a 50
-//10 shares for 1200 
-
-Bid Price | Bid Amount | Offer Price | Offer Amount |
-
-The VWAP two-way price for an instrument is defined as: 
-Bid = Sum(Market Bid Price * Market Bid Amount)/ Sum(Market Bid Amount)  
-Offer = Sum(Market Offer Price * Market Offer Amount)/ Sum(Market Offer Amount)
-
-*/
-
 package UBS;
 
 public class TwoWayPriceImpl implements TwoWayPrice {
