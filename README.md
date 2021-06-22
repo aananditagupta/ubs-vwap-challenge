@@ -6,5 +6,6 @@ Task: Design and write an implementation of the Calculator interface below so on
 <li> From the document I was not sure if the VWAP is meant to be calculated on market (ie Stock Exchange) and instrument basis (ie Company or similar) or only instrument and aggregate for all markets. Test suggests calculate instrument and aggregate for all markets, so I have gone with this assumption.
 
 <li> The State (FIRM/INDICATIVE) coding has been ignored for now. The logic however for the implementation would be: 
+  In the CalculatorImp class, we get the value from the TwoWayPrice class and then use that to classify the whether the amount is indicative or firm. Depending on the value - we return it in the end so that the market makers are able to view the correct classification of the amount and are able to trade accordingly. 
 
 
